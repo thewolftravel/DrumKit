@@ -1,0 +1,143 @@
+body {
+  text-align: center;
+  background-color: #283149;
+  height: 100vh;
+  margin: none;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #da0463;
+  margin: none;
+}
+
+p {
+  font-size: 1rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #da0463;
+}
+
+a {
+  color: #d63384;
+  font-family: monospace;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+footer {
+  margin-bottom: 15px;
+}
+
+/* hover */
+a:hover {
+  color: #337ad6;
+  opacity: 0.8;
+}
+
+p,
+h1:hover {
+  cursor: default;
+}
+
+.set {
+  display: block;
+  margin: 10px;
+}
+
+.footer-list {
+  justify-content: center;
+  border-bottom: 1px #283149;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.drum:hover {
+  cursor: pointer;
+}
+
+.w {
+  background-image: url("./images/kick.png");
+}
+
+.a {
+  background-image: url("./images/tom1.png");
+}
+
+.s {
+  background-image: url("./images/tom2.png");
+}
+
+.d {
+  background-image: url("./images/tom3.png");
+}
+
+.j {
+  background-image: url("./images/tom4.png");
+}
+
+.k {
+  background-image: url("./images/snare.png");
+}
+
+.l {
+  background-image: url("./images/crash.png");
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404b69;
+  font-size: 5rem;
+  font-family: "Arvo", cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #da0463;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 20px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+.drum:hover {
+  border-color: #dbedf3;
+}
+
+/* animation */
+.set {
+  animation-duration: 3s;
+  animation-name: slidein;
+  margin: 10% auto;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
